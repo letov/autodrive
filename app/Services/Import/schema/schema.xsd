@@ -1,0 +1,32 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="auto-catalog">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="offers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="offer" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:int" name="id"/>
+                                        <xs:element type="xs:string" name="mark"/>
+                                        <xs:element type="xs:string" name="model"/>
+                                        <xs:element type="xs:string" name="generation"/>
+                                        <xs:element type="xs:short" name="year"/>
+                                        <xs:element type="xs:int" name="run"/>
+                                        <xs:element type="xs:string" name="color"/>
+                                        <xs:element type="xs:string" name="body-type"/>
+                                        <xs:element type="xs:string" name="engine-type"/>
+                                        <xs:element type="xs:string" name="transmission"/>
+                                        <xs:element type="xs:string" name="gear-type"/>
+                                        <xs:element type="xs:string" name="generation_id"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
