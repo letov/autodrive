@@ -17,8 +17,6 @@ return new class extends Migration
         Schema::create('marks', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
-            $table->unsignedBigInteger('car_model_id');
-            $table->foreign('car_model_id')->references('id')->on('car_models')->onDelete('cascade');
             $table->timestamps();
         });
     }
